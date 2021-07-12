@@ -1,0 +1,444 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    'header'
+    'main';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    height: 60px;
+    display: flex;
+    padding: 0vh 4vw;
+    position: relative;
+    background-color: black;
+}
+header a{
+    transition: all 0.3s;
+}
+header a:hover{
+    color: rgb(148, 142, 142);
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 63vw;
+    height: 60px;
+    align-items: center;
+}
+.links a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+}
+.links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    background-color: black;
+}
+.AreaDoAluno{
+    width: 145px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: black;
+}
+.AreaDoAluno:hover{
+    border: solid 1px rgb(138, 129, 129);
+}
+.HomeBotao{
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    color: rgb(141, 19, 19);
+    position: fixed;
+    font-size: 25px;
+    background-color: rgb(7, 10, 56);
+    border: solid 2px rgb(114, 13, 13);
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px;
+    bottom: 80px;
+    right: 52px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    'pagina1'
+    'PaginaDeFPOO'
+    'PaginaDeLIMA';
+}
+.pagina1:nth-child(1){
+    grid-area: pagina1;
+}
+.PaginaDeFPOO:nth-child(2){
+    grid-area: PaginaDeFPOO;
+}
+.pagina1{
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(imagempagina.jpeg);
+    background-size: cover;
+    color: white;
+}
+.pagina1titulo{
+    font-size: 42px;
+    margin-bottom: 5vh;
+}
+.subtitulo{
+    font-size: 28px;
+    
+}
+.PaginaDeFPOO{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+background: rgb(196, 240, 192);
+    color: rgb(255, 255, 255);
+}
+.tituloFPOO{
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.textosFPOO{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 600px;
+    font-size: 22px;
+    margin-top: 150px;
+    gap: 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+.imagensDeFPOO{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 600px;
+    height: 250px;
+}
+.textosDasImagensDeFPOO{
+   margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.paginaLIMA{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(230, 245, 146);
+}
+.tituloLIMA{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+}
+.textosLIMA{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 22px;
+    margin-right: 15px;
+    margin-left: 15px;
+    max-width: 98.5vw;
+    color: rgb(0, 0, 0);
+}
+.divImagensLIMA{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-around;
+    width: 100vw;
+}
+.imagensLIMA{
+    width: 45vw;
+    height: 45vh;
+}
+.paginaHARE{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(228, 192, 219);
+}
+.tituloHARE{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.textosHARE{
+    margin-top: 15px;
+    font-size: 22px;
+    max-width: 100vw;
+    margin-right: 60px;
+    color: rgb(0, 0, 0);
+}
+.textosHARE hr{
+    color: rgb(0, 0, 0);
+}
+.texto1HARE{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.texto2HARE{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.texto3HARE{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.imagensHARE{
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.paginaSOP{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(196, 130, 216);
+}
+.tituloSOP{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.divTextosSOP{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    font-size: 22px;
+    justify-content: space-around;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    
+}
+.textoIntroducaoSOP{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+.textoIntroducaoSOP p{
+    margin-right: 10px;
+}
+.texto1SOP{
+    max-width: 23.94vw
+}
+.texto2SOP{
+    max-width: 25.94vw;
+}
+.texto3SOP{
+    max-width: 24.94vw;
+}
+footer{
+    height: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+footer p{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 758px){
+    header{
+        width: 100vw;
+        height: 50px;
+    }
+    header a{
+        font-size: 7px;
+    }
+    .links{
+        gap: 65px;
+    }
+    .areaAluno{
+        width: 60px;
+        height: 20px;
+    }
+    .paginaTitulo{
+        font-size: 10px;
+    }
+    .paginaTituloTexto{
+        margin-right: 155px;
+        max-width: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paginaFPOO{
+        font-size: 10px;
+        max-height: 70vh;
+    }
+    .imagensFPOO{
+        flex-direction: row;
+        width: 150px;
+        height: 150px;
+    }
+    .textosFPOO{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .textosImagensFPOO{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .divImagensFPOO{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .paginaLIMA{
+        font-size: 10px;
+        max-width: 100vw;
+        max-height: 70vh;
+    }
+    .textosLIMA{
+        font-size: 10px;
+    }
+    .imagensLIMA{
+        width: 150px;
+        height: 150px;
+    }
+
+    .paginaHARE{
+        max-height: 70vh;
+        font-size: 10px;
+       
+    }
+    .imagensHARE{
+        width: 100px;
+        height: 100px;
+    }
+    .texto1HARE{
+        font-size: 10px;
+    }
+    .texto1HARE p{
+        font-size: 7px;
+        max-width: 150px;
+        
+    }
+    .texto2HARE{
+        font-size: 10px;
+    }
+    .texto2HARE p{
+        font-size: 7px;
+        max-width: 150px;
+    }
+    .texto3HARE{
+        font-size: 7px;
+    }
+    .texto3HARE p{
+        font-size: 7px;
+        max-width: 150px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .paginaSOP{
+        max-height: 70vh;
+        font-size: 10px;
+    }
+    .textoIntroducaoSOP{
+        font-size: 10px;
+    }
+    .texto1SOP{
+        font-size: 10px;
+    }
+    .texto2SOP{
+        font-size: 10px;
+    }
+    .texto3SOP{
+        font-size: 10px;
+    }
+    .divTextosSOP{
+        margin-top: 5px;
+    }
+    .divTextosSOP video{
+        width: 100px;
+        height: 150px;
+    }
+
+    footer{
+        font-size: 10px;
+        width: 100vw;
+         display: flex;
+          justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+     
+    }
+}
