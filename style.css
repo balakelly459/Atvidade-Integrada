@@ -136,8 +136,8 @@ background: rgb(196, 240, 192);
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    width: 600px;
-    height: 230px;
+    width: 550px;
+    height: 210px;
 }
 .textosDasImagensDeFPOO{
    margin-top: 10vh;
@@ -176,8 +176,8 @@ background: rgb(196, 240, 192);
     width: 100vw;
 }
 .imagensLIMA{
-    width: 45vw;
-    height: 40vh;
+    width: 40vw;
+    height: 35vh;
 }
 .paginaHARE{
     width: 100vw;
@@ -226,7 +226,7 @@ background: rgb(196, 240, 192);
 }
 .imagensHARE{
     width: 300px;
-    height: 180px;
+    height: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 4px;
@@ -265,13 +265,13 @@ background: rgb(196, 240, 192);
     margin-right: 10px;
 }
 .texto1SOP{
-    max-width: 23.94vw
+    max-width: 26vw;
 }
 .texto2SOP{
-    max-width: 25.94vw;
+    max-width: 26vw;
 }
 .texto3SOP{
-    max-width: 24.94vw;
+    max-width: 26vw;
 }
 footer{
     height: 60px;
